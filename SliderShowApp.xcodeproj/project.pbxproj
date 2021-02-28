@@ -14,6 +14,10 @@
 		4D3632CE25E9EF23003E86DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632CD25E9EF23003E86DC /* Assets.xcassets */; };
 		4D3632D125E9EF23003E86DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632CF25E9EF23003E86DC /* LaunchScreen.storyboard */; };
 		4D3632DE25EB4D41003E86DC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3632DD25EB4D41003E86DC /* ResultViewController.swift */; };
+		4D3632E125EB9EF5003E86DC /* night in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632E025EB9EF5003E86DC /* night */; };
+		4D3632E425EB9F15003E86DC /* snow in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632E325EB9F15003E86DC /* snow */; };
+		4D3632E725EB9F2D003E86DC /* fall in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632E625EB9F2D003E86DC /* fall */; };
+		4D3632EA25EB9F3E003E86DC /* sea in Resources */ = {isa = PBXBuildFile; fileRef = 4D3632E925EB9F3E003E86DC /* sea */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		4D3632D025E9EF23003E86DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3632D225E9EF23003E86DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3632DD25EB4D41003E86DC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		4D3632E025EB9EF5003E86DC /* night */ = {isa = PBXFileReference; lastKnownFileType = file; path = night; sourceTree = "<group>"; };
+		4D3632E325EB9F15003E86DC /* snow */ = {isa = PBXFileReference; lastKnownFileType = file; path = snow; sourceTree = "<group>"; };
+		4D3632E625EB9F2D003E86DC /* fall */ = {isa = PBXFileReference; lastKnownFileType = file; path = fall; sourceTree = "<group>"; };
+		4D3632E925EB9F3E003E86DC /* sea */ = {isa = PBXFileReference; lastKnownFileType = file; path = sea; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				4D3632CD25E9EF23003E86DC /* Assets.xcassets */,
 				4D3632CF25E9EF23003E86DC /* LaunchScreen.storyboard */,
 				4D3632D225E9EF23003E86DC /* Info.plist */,
+				4D3632E025EB9EF5003E86DC /* night */,
+				4D3632E325EB9F15003E86DC /* snow */,
+				4D3632E625EB9F2D003E86DC /* fall */,
+				4D3632E925EB9F3E003E86DC /* sea */,
 			);
 			path = SliderShowApp;
 			sourceTree = "<group>";
@@ -128,8 +140,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D3632D125E9EF23003E86DC /* LaunchScreen.storyboard in Resources */,
+				4D3632E425EB9F15003E86DC /* snow in Resources */,
 				4D3632CE25E9EF23003E86DC /* Assets.xcassets in Resources */,
+				4D3632EA25EB9F3E003E86DC /* sea in Resources */,
 				4D3632CC25E9EF23003E86DC /* Main.storyboard in Resources */,
+				4D3632E125EB9EF5003E86DC /* night in Resources */,
+				4D3632E725EB9F2D003E86DC /* fall in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

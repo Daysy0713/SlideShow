@@ -12,12 +12,16 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let resultViewController: ResultViewController = segue.destination as! ResultViewController
         resultViewController.x = nowIndex
+        slideShow.setTitle("再生", for: .normal)
+        timer = nil
     }
     
     @IBOutlet weak var slideShow: UIButton!
    
   
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     var nowIndex:Int = 0
     
@@ -40,15 +44,19 @@ class ViewController: UIViewController {
         imageView.image = imageArray[0]
     }
 
-   
+ 
     
     @IBAction func slideShowButoon(_ sender: Any) {
     
         if (timer == nil) {
             
+            
+            
             timer = Timer.scheduledTimer(timeInterval: 2.0 , target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
         
             slideShow.setTitle("停止", for: .normal)
+            nextButton.isEnabled = false
+            backButton.isEnabled = false
             }
         else {
             timer.invalidate()
@@ -56,7 +64,10 @@ class ViewController: UIViewController {
             timer = nil
             
             slideShow.setTitle("再生", for: .normal)
-        }
+            
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
+            }
     }
     
     @objc func changeImage() {
@@ -74,6 +85,7 @@ class ViewController: UIViewController {
       
         if (timer != nil) {
             
+            
         }
             else if (nowIndex == 0) {
                 nowIndex = 3
@@ -87,8 +99,8 @@ class ViewController: UIViewController {
     @IBAction func nextPhoto(_ sender: Any) {
         
         if (timer != nil) {
-            
-        }
+          
+    }
         else if (nowIndex == 3) {
             
             nowIndex = 0
