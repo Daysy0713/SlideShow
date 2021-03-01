@@ -17,7 +17,7 @@ class ResultViewController: UIViewController {
     
     var imageArray: [UIImage] = [
     UIImage(named: "sea")!,
-    UIImage(named: "Fall")!,
+    UIImage(named: "fall")!,
     UIImage(named: "snow")!,
     UIImage(named: "night")!
     ]

@@ -13,7 +13,10 @@ class ViewController: UIViewController {
         let resultViewController: ResultViewController = segue.destination as! ResultViewController
         resultViewController.x = nowIndex
         slideShow.setTitle("再生", for: .normal)
+        timer.invalidate()
         timer = nil
+        nextButton.isEnabled = true
+        backButton.isEnabled = true
     }
     
     @IBOutlet weak var slideShow: UIButton!
@@ -32,7 +35,7 @@ class ViewController: UIViewController {
     
     var imageArray: [UIImage] = [
     UIImage(named: "sea")!,
-    UIImage(named: "Fall")!,
+    UIImage(named: "fall")!,
     UIImage(named: "snow")!,
     UIImage(named: "night")!
     ]
