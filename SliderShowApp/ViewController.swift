@@ -13,8 +13,11 @@ class ViewController: UIViewController {
         let resultViewController: ResultViewController = segue.destination as! ResultViewController
         resultViewController.x = nowIndex
         slideShow.setTitle("再生", for: .normal)
-        timer.invalidate()
-        timer = nil
+        if timer != nil {
+            timer.invalidate()
+            timer = nil
+        }
+        
         nextButton.isEnabled = true
         backButton.isEnabled = true
     }
